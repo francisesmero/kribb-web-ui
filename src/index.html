@@ -14,15 +14,17 @@
         <div class="flex items-center px-36 py-16">
             <!-- First Child (Left Section) -->
             <div class="flex-initial w-1/4">
-                <img class="object-cover h-10 w-auto" src="assets/img/kribb-logo.png">
+                <a href="#">
+                <img class="object-cover h-6 w-auto" src="assets/img/kribb-logo.png">
+                </a>
             </div>
             <!-- Second Child (Navigation Links Section) -->
             <div class="flex flex-row w-1/2 gap-x-16 justify-center">
                 <div class="basis-auto"><a href="#" class="font-regular text-orange-400">Rental</a></div>
-                <div class="basis-auto"><a href="#" class="font-regular text-slate-300 hover:text-orange-300 transition ease-in-out duration-200">Sales</a></div>
-                <div class="basis-auto"><a href="#" class="font-regular text-slate-300 hover:text-orange-300 transition ease-in-out duration-200">Building</a></div>
-                <div class="basis-auto"><a href="#" class="font-regular text-slate-300 hover:text-orange-300 transition ease-in-out duration-200">Agent</a></div>
-                <div class="basis-auto"><a href="#" class="font-regular text-slate-300 hover:text-orange-300 transition ease-in-out duration-200">Contact Us</a></div>
+                <div class="basis-auto"><a href="#" class="font-regular text-slate-400 hover:text-orange-300 transition ease-in-out duration-200">Sales</a></div>
+                <div class="basis-auto"><a href="#" class="font-regular text-slate-400 hover:text-orange-300 transition ease-in-out duration-200">Building</a></div>
+                <div class="basis-auto"><a href="#" class="font-regular text-slate-400 hover:text-orange-300 transition ease-in-out duration-200">Agent</a></div>
+                <div class="basis-auto"><a href="#" class="font-regular text-slate-400 hover:text-orange-300 transition ease-in-out duration-200">Contact Us</a></div>
             </div>
             <!-- Third Child (Right Section) -->
             <div class="flex w-1/4 justify-end">
@@ -46,8 +48,8 @@
             </div>
             <div class="flex basis-3/5 flex-col">
                 <img class="object-cover h-full rounded-t-[150px] rounded-l-[150px] shadow-sm border-gray-100 border" src="assets/img/image-1.jpg">
-                <span class="circle absolute bottom-20 left-3/4 w-48 h-48 bg-orange-500 rounded-full shadow-lg">  </span>
-                <span class="circle absolute bottom-28 left-2/3  w-24 h-24 bg-white rounded-full shadow-md">  </span>
+                <span class="circle absolute bottom-20 left-1/2 w-48 h-48 bg-white rounded-full shadow-[rgba(149,157,165,0.2)_0px_8px_24px]">  </span>
+            
 
                 <div class="flex flex-col gap-y-4 circle-group absolute top-40 right-56">
                         <div class="flex gap-x-4 flex-row">
@@ -130,49 +132,258 @@
         </div>
     </section>
 
+   
+
     <section class="search-form">
-        <div class="px-36 py-24">
+        <div class="px-56 py-24">
          <div class="flex flex-row items-center gap-x-26 search-bar bg-white w-full h-28 shadow-[rgba(149,157,165,0.2)_0px_8px_24px] rounded-full"> 
-            <div class="flex basis-1/4">
-            <select class="h-full rounded-md border-0 bg-transparent py-2 px-24 text-gray-500 sm:text-sm outline-none ring-0">
+            <div class="flex basis-1/4 px-10">
+                <select id="countries" class="text-gray-400 text-sm rounded-lg block w-full p-2.5 ring-0 outline-none">
                 <option selected disabled>Location</option>
-                <option>Taguig</option>
-                <option>Makati</option>
-                <option>Calabarzon</option>
-              </select>
+                <option value="US">Makati</option>
+                <option value="CA">Pampanga</option>
+                <option value="FR">Zambales</option>
+                <option value="DE">Bataan</option>
+                </select>
             </div>
-            <div class="flex basis-1/4">
-              <select class="h-full rounded-md border-0 bg-transparent py-2 px-24 text-gray-500 sm:text-sm">
-                <option selected disabled>Property</option>
-                <option>Apartment</option>
-                <option>Condo</option>
-                <option>House</option>
-              </select>
+
+            <div class="flex basis-1/4 px-10">
+                <select id="countries" class="text-gray-400 text-sm rounded-lg block w-full p-2.5 ring-0 outline-none">
+                    <option selected disabled>Property</option>
+                    <option value="US">Apartment</option>
+                    <option value="CA">Condo</option>
+                    <option value="FR">House</option>
+                    <option value="DE">Duplex</option>
+                    </select>
             </div>
-            <div class="flex basis-1/4">
-                <select class="h-full rounded-md border-0 bg-transparent py-2 px-24 text-gray-500 sm:text-sm">
-                    <option selected disabled>Price</option>
-                    <option>₱10,000</option>
-                    <option>₱20,000</option>
-                    <option>₱30,000</option>
-                  </select>
+
+            <div class="flex basis-1/4 px-10">
+                <select id="countries" class="text-gray-400 text-sm rounded-lg block w-full p-2.5 ring-0 outline-none">
+                    <option selected disabled>Max Price</option>
+                    <option value="US">30,000</option>
+                    <option value="CA">40,000</option>
+                    <option value="FR">50,000</option>
+                    <option value="DE">60,000</option>
+                    </select>
+                
             </div>
-            <div class="flex basis-1/4 justify-end pr-20">
-                <a href="#_" class="relative inline-flex  items-center px-28 py-3 overflow-hidden text-lg font-medium text-orange-500 border-2 border-orange-500 rounded-full hover:text-white group hover:bg-gray-50">
-                    <span class="absolute left-0 block w-full h-0 transition-all bg-orange-500 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
-                    <span class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                          </svg>
-                          
-                    </span>
-                    <span class="relative">Search</span>
-                    </a>
+
+            <div class="flex basis-1/4 justify-end px-10">
+                <button class="flex flex-row px-8 py-3 bg-orange-400 text-white rounded-full hover:shadow-sm hover:bg-orange-500 transition ease-in-out duration-200"> 
+                    Search
+                    <span style="margin-left: 50px;"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                   </svg>
+                   </span>
+                </button>
             </div>
-              <!-- <button class="flex basis-1/4 w-full bg-orange-400 py-6 mr-10 px-10 text-white rounded-full hover:shadow-sm hover:bg-orange-500 transition ease-in-out duration-200">Learn more</button> -->
          </div>
          </div>
     </section>
+
+
+    <section class="about">
+        <div class="bg-section-light px-36 py-24 mr-36 rounded-tr-[150px] flex flex-row gap-x-16">
+            <div class="flex basis-3/5 flex-col">
+                <img class="object-cover h-full rounded-b-[150px] rounded-l-[150px] shadow-sm border-gray-100 border" src="assets/img/image-2.jpg">
+                <span class="circle absolute bottom-20 left-1/2 w-48 h-48 bg-white rounded-full shadow-[rgba(149,157,165,0.2)_0px_8px_24px]">  </span>
+                <div class="flex flex-col gap-y-4 circle-group absolute top-40 right-56">
+                        <div class="flex gap-x-4 flex-row">
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                        </div>
+                        <div class="flex gap-x-4 flex-row">
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                        </div>
+                        <div class="flex gap-x-4 flex-row">
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                        </div>
+                        <div class="flex gap-x-4 flex-row">
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                        </div>
+                        <div class="flex gap-x-4 flex-row">
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                        </div>
+                        <div class="flex gap-x-4 flex-row">
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                        </div>
+                        <div class="flex gap-x-4 flex-row">
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                        </div>
+                        <div class="flex gap-x-4 flex-row">
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                        </div>
+                        <div class="flex gap-x-4 flex-row">
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                            <span class="flex-none bg-white rounded-full shadow-inner w-2 h-2"> </span>
+                        </div>
+                        
+
+                        
+                </div>
+            </div>
+            <div class="flex basis-2/5 flex-col"> 
+                <p class="text-orange-400 font-semibold text-lg">About</p>
+                <h1 class="hero-title font-semibold text-5xl text-light-secondary pb-12">We Provide the <span class="font-semibold text-orange-400">Best Property</span></br> For you</h1>
+                <p class="text-gray-500 pb-14">Unlocking Spaces, Unveiling Dreams! At <span class="font-semibold text-orange-400">Kribb</span> Rentals, we're not just finding you properties; we're revealing a world of extraordinary living. Imagine effortless searches, dreamy listings, and spaces that turn into unforgettable stories. </p>
+                <div class="flex gap-4">
+                    <button class="px-8 py-3 bg-orange-400 text-white rounded-full hover:shadow-sm hover:bg-orange-500 transition ease-in-out duration-200">Learn more</button>
+                    <button class="p-4 h-14 w-14 bg-slate-700 text-white rounded-full hover:bg-slate-800 transition ease-in-out duration-200"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>
+                      </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services px-56 py-36">
+        <div class="flex flex-row gap-x-12">
+
+            <div class="basis-1/3"> 
+                <div class="card flex flex-col shadow-[rgba(0,0,0,0.1)_0px_10px_100px] py-6 px-6 rounded-tr-[40px] rounded-bl-[40px]"> 
+                    <div class="img-card-container self-center rounded-full bg-orange-100 px-4 py-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-orange-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                          </svg> 
+                    </div>
+                    
+                
+                    <h1 class="text-gray-500 self-center py-4 font-semibold px-10">Make Your Dream True</h1>
+                    <p class="text-center text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus urna, vestibulum vel tempus ac, auctor fermentum lectus. Ut eu congue sapien.</p>
+          
+                </div>
+            </div>
+
+           <div class="basis-1/3"> 
+                <div class="card flex flex-col shadow-[rgba(0,0,0,0.1)_0px_10px_100px] py-6 px-6 rounded-tr-[40px] rounded-bl-[40px]"> 
+                    <div class="img-card-container self-center rounded-full bg-orange-100 px-4 py-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-orange-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                          </svg>                          
+                    </div>
+                    <h1 class="text-gray-500 self-center py-4 font-semibold">Subscribe To Membership</h1>
+                    <p class="text-center text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus urna, vestibulum vel tempus ac, auctor fermentum lectus. Ut eu congue sapien.</p>
+                </div>
+            </div>
+
+            <div class="basis-1/3"> 
+                <div class="card flex flex-col shadow-[rgba(0,0,0,0.1)_0px_10px_100px] py-6 px-6 rounded-tr-[40px] rounded-bl-[40px]"> 
+                    <div class="img-card-container self-center rounded-full bg-orange-100 px-4 py-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-orange-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
+                          </svg>                          
+                    </div>
+                    <h1 class="text-gray-500 self-center py-4 font-semibold">Enjoy Your Home</h1>
+                    <p class="text-center text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus urna, vestibulum vel tempus ac, auctor fermentum lectus. Ut eu congue sapien.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <p class="text-orange-400 font-semibold text-lg pl-36">Recent</p>
+        <h1 class="hero-title font-semibold text-5xl text-light-secondary pb-12 pl-36">Recently added <span class="font-semibold text-orange-400">Properties</span></br></h1>
+       
+        <div class="bg-section-light py-24 ml-36 rounded-tl-[150px] flex flex-row gap-x-16 overflow-x-auto">
+            <div class="flex flex-col"> 
+               
+                <div class="flex flex-row gap-x-6 px-36">
+            
+                <div class="card flex basis-auto flex-col shadow-[rgba(0,0,0,0.1)_0px_10px_100px] pt-2 pb-6 px-2 rounded-t-[40px] rounded-bl-[40px] w-96"> 
+                    <div class="img-card-container self-center">
+                        <img src="../src/assets/img/house-1.jpeg" class="object-cover rounded-t-[40px] h-60 w-96">
+                    </div>
+                   
+                    <h1 class="text-orange-500 self-start font-semibold pt-12 px-2 text-2xl">High Street South, BGC</h1>
+                    <h1 class="text-light-secondary self-start font-semibold px-2">₱ 25,000 / Monthly</h1>
+                    <h1 class="text-gray-400 self-start py-6 px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus urna, vestibulum vel tempus ac, auctor fermentum lectus. Ut eu congue sapien.</h1>
+                    <button class="px-8 py-3 self-center bg-orange-400 text-white w-1/2 rounded-full hover:shadow-sm hover:bg-orange-500 transition ease-in-out duration-200">Learn more</button>
+                </div>
+
+                <div class="card flex basis-auto flex-col shadow-[rgba(0,0,0,0.1)_0px_10px_100px] pt-2 pb-6 px-2 rounded-t-[40px] rounded-bl-[40px] w-96"> 
+                    <div class="img-card-container self-center">
+                        <img src="../src/assets/img/house-2.jpeg" class="object-cover rounded-t-[40px] h-60 w-96">
+                    </div>
+                   
+                    <h1 class="text-orange-500 self-start font-semibold pt-12 px-2 text-2xl">High Street South, BGC</h1>
+                    <h1 class="text-light-secondary self-start font-semibold px-2">₱ 25,000 / Monthly</h1>
+                    <h1 class="text-gray-400 self-start py-6 px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus urna, vestibulum vel tempus ac, auctor fermentum lectus. Ut eu congue sapien.</h1>
+                    <button class="px-8 py-3 self-center bg-orange-400 text-white w-1/2 rounded-full hover:shadow-sm hover:bg-orange-500 transition ease-in-out duration-200">Learn more</button>
+                </div>
+
+                <div class="card flex basis-auto flex-col shadow-[rgba(0,0,0,0.1)_0px_10px_100px] pt-2 pb-6 px-2 rounded-t-[40px] rounded-bl-[40px] w-96"> 
+                    <div class="img-card-container self-center">
+                        <img src="../src/assets/img/house-3.jpeg" class="object-cover rounded-t-[40px] h-60 w-96">
+                    </div>
+                   
+                    <h1 class="text-orange-500 self-start font-semibold pt-12 px-2 text-2xl">High Street South, BGC</h1>
+                    <h1 class="text-light-secondary self-start font-semibold px-2">₱ 25,000 / Monthly</h1>
+                    <h1 class="text-gray-400 self-start py-6 px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus urna, vestibulum vel tempus ac, auctor fermentum lectus. Ut eu congue sapien.</h1>
+                    <button class="px-8 py-3 self-center bg-orange-400 text-white w-1/2 rounded-full hover:shadow-sm hover:bg-orange-500 transition ease-in-out duration-200">Learn more</button>
+                </div>
+                <div class="card flex basis-auto flex-col shadow-[rgba(0,0,0,0.1)_0px_10px_100px] pt-2 pb-6 px-2 rounded-t-[40px] rounded-bl-[40px] w-96"> 
+                    <div class="img-card-container self-center">
+                        <img src="../src/assets/img/house-4.jpeg" class="object-cover rounded-t-[40px] h-60 w-96">
+                    </div>
+                   
+                    <h1 class="text-orange-500 self-start font-semibold pt-12 px-2 text-2xl">High Street South, BGC</h1>
+                    <h1 class="text-light-secondary self-start font-semibold px-2">₱ 25,000 / Monthly</h1>
+                    <h1 class="text-gray-400 self-start py-6 px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus urna, vestibulum vel tempus ac, auctor fermentum lectus. Ut eu congue sapien.</h1>
+                    <button class="px-8 py-3 self-center bg-orange-400 text-white w-1/2 rounded-full hover:shadow-sm hover:bg-orange-500 transition ease-in-out duration-200">Learn more</button>
+                </div>
+                
+       
+            </div>
+            </div>
+        </div>
+    </section>
+
+
 
     
     
