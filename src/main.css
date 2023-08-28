@@ -11,3 +11,18 @@
     margin-bottom: 10px;
     border-top:solid 1px #ffffff2e;
 }
+
+.text-email:focus {
+    color: #777777;
+}
+
+.text-email::placeholder{
+    color:#d7d7d7;
+}
+
+
+.shadow {
+    box-shadow: rgba(203, 203, 203, 0.2) 0px 8px 24px;
+    border:solid 1px #d68348;
+    transition: .1s ease-in-out;
+}
