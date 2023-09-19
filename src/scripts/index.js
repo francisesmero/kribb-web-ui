@@ -13,3 +13,14 @@ emailInput.addEventListener('focus', () => {
 emailInput.addEventListener('blur', () => {
     searchBar.classList.remove('shadow');
 })
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector('[data-collapse-toggle="navbar-hamburger"]');
+    const navbar = document.getElementById('navbar-hamburger');
+    
+    toggleButton.addEventListener('click', function () {
+      navbar.classList.toggle('hidden');
+    });
+  });
